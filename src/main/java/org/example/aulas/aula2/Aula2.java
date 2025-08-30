@@ -10,8 +10,13 @@ public class Aula2 {
         caneta.tampada = false;
         caneta.status();
         caneta.destampar();
-
         caneta.rabiscar();
+
+        Caneta caneta1 = new Caneta();
+        caneta1.tampar();
+        caneta1.status();
+        caneta1.rabiscar();
+
 
     }
 }
