@@ -8,6 +8,12 @@ public class Caneta {
     Boolean tampada;
 
 
+    public void status(){
+        System.out.println(("Uma caneta de cor " + cor + " e modelo " + modelo + " de ponta " + ponta +" e carga " +
+                carga));
+        System.out.println("Está tampada? " + tampada);
+    }
+
     public void tampar(){
         tampada = true;
     }
