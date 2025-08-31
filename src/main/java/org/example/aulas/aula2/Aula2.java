@@ -7,9 +7,8 @@ public class Aula2 {
         caneta.ponta = 0.5;
         caneta.modelo = "BIC MOD";
         caneta.carga = 90;
-        caneta.tampada = false;
-        caneta.status();
         caneta.destampar();
+        caneta.status();
         caneta.rabiscar();
 
         Caneta caneta1 = new Caneta();
