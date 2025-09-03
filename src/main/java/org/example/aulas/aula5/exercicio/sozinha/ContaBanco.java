@@ -35,8 +35,14 @@ public class ContaBanco {
        return  mensagem;
     }
 
-    public String pagarMensal(Double mensalidade){
+    public String pagarMensal(){
         String mensagem;
+        Double mensalidade;
+        if(this.tipo == "CC"){
+            mensalidade = 12.0;
+        } else {
+            mensalidade = 20.0;
+        }
 
         if(status){
             if(saldo>= mensalidade){
