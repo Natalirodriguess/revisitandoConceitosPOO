@@ -15,6 +15,22 @@ public class ContaBanco {
 
     public void abrirConta(String tipo){
         setTipo(tipo);
+        setStatus(true);
+        if(this.tipo == "CC"){
+            this.saldo = 50.0;
+        }else if (this.tipo == "CP"){
+            this.saldo = 150.0;
+        }
+    }
+
+    public void fecharConta(){
+        if (this.saldo > 0){
+            System.out.println("Conta com dinheiro!");
+        } else if (this.saldo < 0){
+            System.out.println("Conta está em débito");
+        }else {
+            setStatus(false);
+        }
     }
 
     public void setNumeroConta(Integer numeroConta) {
