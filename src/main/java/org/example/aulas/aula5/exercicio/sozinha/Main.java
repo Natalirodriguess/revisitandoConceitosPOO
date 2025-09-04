@@ -9,6 +9,7 @@ public class Main {
         System.out.println("Saldo inicial é de: " + contaBancoUm.getSaldo());
         System.out.println(contaBancoUm.sacar(135.0));
         System.out.println(contaBancoUm.depositar(10.0));
+        System.out.println(contaBancoUm.sacar(20.0));
         System.out.println(contaBancoUm.pagarMensal());
         System.out.println(contaBancoUm.fecharConta());
         System.out.println(contaBancoUm.getStatus());
