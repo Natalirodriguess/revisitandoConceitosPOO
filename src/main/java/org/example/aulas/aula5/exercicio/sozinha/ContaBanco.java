@@ -8,6 +8,8 @@ public class ContaBanco {
     private Double saldo;
     private Boolean status;
 
+    //também não criei construtor
+
     public void abrirConta(String tipo){
         this.tipo = tipo;
         this.status = true;

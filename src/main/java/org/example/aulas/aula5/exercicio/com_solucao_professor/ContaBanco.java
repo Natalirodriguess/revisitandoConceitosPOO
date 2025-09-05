@@ -9,8 +9,8 @@ public class ContaBanco {
     private Boolean status;
 
     public ContaBanco(){
-        this.saldo = 0.0;
-        this.status = false;
+        this.setSaldo(0.0);
+        this.setStatus(false);
     }
 
     public void abrirConta(String tipo){
