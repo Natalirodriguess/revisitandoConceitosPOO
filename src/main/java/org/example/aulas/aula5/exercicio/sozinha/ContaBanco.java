@@ -40,7 +40,7 @@ public class ContaBanco {
         Double mensalidade;
         if(this.tipo == "CC"){
             mensalidade = 12.0;
-        } else {
+        } else { //erro na minha lógica, pois não captura o outro tipo de conta, mas sim qualquer outro valor
             mensalidade = 20.0;
         }
 
@@ -84,7 +84,7 @@ public class ContaBanco {
              mensagem = "O valor " + valor + " foi depositado com sucesso!";
         }
         else {
-            mensagem = "O cliente não possui conta ativa para deposito";
+            mensagem = "O cliente não possui conta ativa para depósito";
         }
 
         return mensagem;

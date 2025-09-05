@@ -23,6 +23,47 @@ public class ContaBanco {
         }
     }
 
+    public void depositar(Double valor){
+        if(status){
+            setSaldo(getSaldo() + valor);
+        } else{
+            System.out.println("Impossível sacar");
+        }
+
+    }
+
+    public void sacar(Double valor){
+        if(status){
+            if(saldo> valor) {
+                saldo = saldo - valor;
+            }else {
+                System.out.println("Saldo insuficiente.");
+            }
+        }else {
+            System.out.println("Impossível sacar");
+        }
+    }
+
+    public void pagarMensal(){
+        Double valor = 0.0;
+
+        if(this.tipo == "CC"){
+            valor = 12.0;
+        } else if (this.tipo == "CP"){ //por conta desse caminho específico, a variável valor precisa ser inicializada
+            valor = 20.0;
+        }
+
+        if (status){
+            if(saldo > valor){
+                saldo = saldo - valor;
+            } else {
+                System.out.println("Saldo insuficiente");
+            }
+        }else {
+            System.out.println("Impossível pagar");
+        }
+    }
+
     public void fecharConta(){
         if (this.saldo > 0){
             System.out.println("Conta com dinheiro!");
