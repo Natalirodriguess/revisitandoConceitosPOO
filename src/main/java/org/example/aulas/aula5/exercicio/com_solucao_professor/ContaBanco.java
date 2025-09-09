@@ -8,9 +8,19 @@ public class ContaBanco {
     private Double saldo;
     private Boolean status;
 
+
     public ContaBanco(){
         this.setSaldo(0.0);
         this.setStatus(false);
+    }
+
+    public void estadoAtual(){
+        System.out.println("-------------------------");
+        System.out.println("Conta: " + this.getNumeroConta());
+        System.out.println("Tipo:" + this.getTipo());
+        System.out.println("Dono:" + this.getDono());
+        System.out.println("Saldo:" + this.getSaldo());
+        System.out.println("Status:" + this.getStatus());
     }
 
     public void abrirConta(String tipo){
