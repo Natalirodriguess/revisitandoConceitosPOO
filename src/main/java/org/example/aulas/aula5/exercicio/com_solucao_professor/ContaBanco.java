@@ -31,6 +31,8 @@ public class ContaBanco {
         }else if (this.tipo == "CP"){
             this.saldo = 150.0;
         }
+        System.out.println("Conta aberta com sucesso!");
+
     }
 
     public void depositar(Double valor){
@@ -44,7 +46,7 @@ public class ContaBanco {
 
     public void sacar(Double valor){
         if(status){
-            if(saldo> valor) {
+            if(saldo>= valor) {
                 saldo = saldo - valor;
             }else {
                 System.out.println("Saldo insuficiente.");
