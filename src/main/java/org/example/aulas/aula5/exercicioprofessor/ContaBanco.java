@@ -1,4 +1,4 @@
-package org.example.aulas.aula5.exercicio.com_solucao_professor;
+package org.example.aulas.aula5.exercicioprofessor;
 
 public class ContaBanco {
 
