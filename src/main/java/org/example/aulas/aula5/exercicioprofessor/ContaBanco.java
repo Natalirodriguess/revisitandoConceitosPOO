@@ -61,7 +61,7 @@ public class ContaBanco {
 
         if(this.tipo == "CC"){
             valor = 12.0;
-        } else if (this.tipo == "CP"){ //por conta desse caminho específico, a variável valor precisa ser inicializada
+        } else if (this.tipo == "CP"){ //por conta desse caminho específico, a variável valor precisa ser inicializada 
             valor = 20.0;
         }
 
