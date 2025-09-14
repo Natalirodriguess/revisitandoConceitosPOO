@@ -3,7 +3,6 @@ package org.example.aulas.aula6;
 
 
 public class ControleRemoto implements Controlador {
-    @AnotacaoQueEucriei
     private Integer volume;
     private Boolean ligado;
     private Boolean tocando;
