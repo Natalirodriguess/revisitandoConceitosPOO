@@ -12,6 +12,7 @@ public class Main {
         lutadores[4] = new Lutador("UFOCobol", "Brasil", 37, 1.70, 119.3, 5, 4, 3);
         lutadores[5] = new Lutador("Nerdaart", "EUA", 30, 1.81, 105.7, 12, 2, 4);
         lutadores[0].apresentar();
+        lutadores[0].perderLuta();
         lutadores[0].status();
         lutadores[5].status();
         lutadores[0].empatarLuta();

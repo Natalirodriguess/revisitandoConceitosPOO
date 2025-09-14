@@ -48,7 +48,7 @@ public class Lutador {
     }
 
     public void perderLuta(){
-        this.setDerrotas(getDerrotas() - 1);
+        this.setDerrotas(getDerrotas() + 1);
     }
 
     public void empatarLuta(){
