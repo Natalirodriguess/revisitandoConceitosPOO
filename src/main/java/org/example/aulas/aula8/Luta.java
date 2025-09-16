@@ -25,12 +25,12 @@ public class Luta {
     }
 
     public void lutar(){
-        Random numeroAleatorio = new Random();
-        Integer vencedor;
+    
         if(aprovada){
             desafiado.apresentar();
             desafiante.apresentar();
-            vencedor = numeroAleatorio.nextInt(0, 3);
+            Random numeroAleatorio = new Random();
+            Integer vencedor = numeroAleatorio.nextInt(3);
             switch (vencedor){
                 case 0:
                     desafiante.empatarLuta();
