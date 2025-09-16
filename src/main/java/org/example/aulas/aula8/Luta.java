@@ -13,9 +13,10 @@ public class Luta {
         if(desafiado.getCategoria() == desafiante.getCategoria()
         && desafiado != desafiante){
             this.aprovada = true;
-            System.out.println("Luta marcada!");
             this.desafiado = desafiado;
             this.desafiante = desafiante;
+            System.out.println("Luta marcada!");
+
         }else{
             this.aprovada = false;
             this.desafiado = null;
