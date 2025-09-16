@@ -16,7 +16,6 @@ public class Luta {
             this.desafiado = desafiado;
             this.desafiante = desafiante;
             System.out.println("Luta marcada!");
-
         }else{
             this.aprovada = false;
             this.desafiado = null;
