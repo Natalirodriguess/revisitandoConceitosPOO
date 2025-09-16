@@ -17,5 +17,9 @@ public class Main {
         Luta UEC01 = new Luta();
         UEC01.marcarLuta(lutadores[0],  lutadores[1]);
         UEC01.lutar();
+        lutadores[0].status();
+        lutadores[1].status();
+
+        UEC01.marcarLuta(lutadores[4],  lutadores[5]);
     }
 }

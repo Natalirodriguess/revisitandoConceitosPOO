@@ -20,7 +20,7 @@ public class Luta {
             this.aprovada = false;
             this.desafiado = null;
             this.desafiante = null;
-            System.out.println("Erro ao marca luta.");
+            System.out.println("Erro ao marcar luta.");
         }
     }
 
@@ -31,6 +31,8 @@ public class Luta {
             desafiante.apresentar();
             Random numeroAleatorio = new Random();
             Integer vencedor = numeroAleatorio.nextInt(3);
+
+            System.out.println("===========RESULTADO DA LUTA=============");
             switch (vencedor){
                 case 0:
                     desafiante.empatarLuta();
@@ -39,8 +41,8 @@ public class Luta {
                     System.out.println("Houve empate!");
                     break;
                 case 1:
-                    desafiado.ganharLuta();
-                    desafiante.perderLuta();
+                    this.desafiado.ganharLuta();
+                    this.desafiante.perderLuta();
                     System.out.println("=============================");
                     System.out.println("O vencedor é o " + desafiado.getNome());
                     break;
@@ -50,6 +52,7 @@ public class Luta {
                     System.out.println("=============================");
                     System.out.println("O vencedor é o " + desafiante.getNome());
             }
+            System.out.println("============================");
         } else {
             System.out.println("Luta não pode acontecer");
         }

@@ -44,7 +44,7 @@ public class Lutador {
     }
 
     public void ganharLuta(){
-        setVitorias(getVitorias() + 1);
+        this.setVitorias(getVitorias() + 1);
     }
 
     public void perderLuta(){
