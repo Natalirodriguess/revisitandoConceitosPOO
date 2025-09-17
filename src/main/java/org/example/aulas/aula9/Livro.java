@@ -1,6 +1,6 @@
 package org.example.aulas.aula9;
 
-public class Livro {
+public class Livro implements Publicacao{
     String titulo;
     String autor;
     Integer totalPaginas;
@@ -12,4 +12,23 @@ public class Livro {
 
     }
 
+    @Override
+    public void abrir() {
+
+    }
+
+    @Override
+    public void fechar() {
+
+    }
+
+    @Override
+    public void avancarPag() {
+
+    }
+
+    @Override
+    public void voltarPag() {
+
+    }
 }
