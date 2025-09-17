@@ -8,5 +8,8 @@ public class Livro {
     Pessoa leitor;
 
 
+    public void detalhes(){
+
+    }
 
 }

@@ -1,6 +1,7 @@
 package org.example.aulas.aula9;
 
 public class Pessoa {
+
     private String nome;
     private Integer idade;
     private String sexo;
