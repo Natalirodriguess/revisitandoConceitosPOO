@@ -9,7 +9,7 @@ public class Livro implements Publicacao{
     Pessoa leitor;
 
     @Override
-    public String toString() {
+    public String detalhes() {
         return "Livro{" +
                 "titulo='" + titulo + '\'' +
                 ", autor='" + autor + '\'' +
