@@ -5,6 +5,6 @@ public class Main {
         Livro livro = new Livro();
         livro.abrir();
         livro.titulo = "Protagonismo";
-        System.out.println(livro.toString());
+        System.out.println(livro.detalhe());
     }
 }
