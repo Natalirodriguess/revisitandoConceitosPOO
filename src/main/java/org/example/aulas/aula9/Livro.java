@@ -1,12 +1,37 @@
 package org.example.aulas.aula9;
 
-public class Livro implements Publicacao{
+public class Livro implements Publicacao {
     String titulo;
     String autor;
     Integer totalPaginas;
     Integer paginaAtual;
     Boolean aberto;
     Pessoa leitor;
+
+    public Livro(String titulo, String autor, Integer totalPaginas, Pessoa leitor) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.totalPaginas = totalPaginas;
+        this.paginaAtual = 0;
+        this.aberto = false;
+        this.leitor = leitor;
+    }
+
+    public Integer getPaginaAtual() {
+        return paginaAtual;
+    }
+
+    public void setPaginaAtual(Integer paginaAtual) {
+        this.paginaAtual = paginaAtual;
+    }
+
+    public Boolean getAberto() {
+        return aberto;
+    }
+
+    public void setAberto(Boolean aberto) {
+        this.aberto = aberto;
+    }
 
     public String detalhe() {
         return "Livro{" +
@@ -62,6 +87,7 @@ public class Livro implements Publicacao{
     public void fechar() {
         if (aberto) {
             System.out.println("fechando livro " +  this.titulo);
+            aberto = false;
         }else {
             System.out.println("Erro ao fechar livro ");
         }
@@ -75,5 +101,10 @@ public class Livro implements Publicacao{
     @Override
     public void voltarPag() {
         paginaAtual = paginaAtual - 1;
+    }
+
+    @Override
+    public void folhear(Integer pagina) {
+        this.paginaAtual = pagina;
     }
 }

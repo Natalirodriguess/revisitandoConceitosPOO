@@ -6,6 +6,12 @@ public class Pessoa {
     private Integer idade;
     private String sexo;
 
+    public Pessoa(String nome, Integer idade, String sexo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+    }
+
     public void fazerAniversario(){
         this.setIdade(this.getIdade() + 1);
     }
