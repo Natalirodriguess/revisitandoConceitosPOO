@@ -8,8 +8,7 @@ public class Livro implements Publicacao{
     Boolean aberto;
     Pessoa leitor;
 
-    @Override
-    public String detalhes() {
+    public String detalhe() {
         return "Livro{" +
                 "titulo='" + titulo + '\'' +
                 ", autor='" + autor + '\'' +
